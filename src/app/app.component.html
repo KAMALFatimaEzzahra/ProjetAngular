@@ -1,0 +1,38 @@
+<div>
+  <!--<p style="font-size: 25px;">Mon nom est  : {{Nom}} {{Prenom}} agé(e) de : {{Age}} ans</p>
+ <img src={{img}}/>-->
+  <!--<img [src]="img"/>
+  <br/><br/>
+
+  <button (click)="AfficherImage()" style="border: 2px solid black;border-radius: 5px;margin: 15px;padding: 10px;font-size: 15px;font-weight: bold;"> Afficher</button><br/>
+  <br/>
+  <button (click)="SupprimerImage()"  style="border: 2px solid black;border-radius: 5px;margin: 15px;padding: 10px;font-size: 15px;font-weight: bold;"> Supprimer</button>-->
+  <!--<input  type="text"  [(ngModel)]="monNom">
+
+  <h1>Bonjour Cher Ami {{monNom}}</h1>
+
+  <p *ngFor="let a of Tab"  (click)="Delete(a)"> {{a}}  </p>-->
+
+  <em><ins><h3> Liste  des Utilisateurs</h3></ins></em>
+     <ul>
+    <li *ngFor="let User of UserList" (click)="View(User)">{{User.name}}</li>
+     </ul>
+
+  <em><ins><h3> Informations des Utilisateurs</h3></ins></em>
+     <table class="table table-bordered table-striped">
+      <tr class="table-active">
+        <th> Nom </th>
+        <th> Username </th>
+        <th> Email </th>
+        <th> Téléphone </th>
+        <th> Site Web </th>
+      </tr>
+      <tr class="table-info">
+        <td> {{b.name}} </td>
+        <td> {{b.username}} </td>
+        <td> {{b.email}} </td>
+        <td> {{b.phone}} </td>
+        <td> {{b.website}} </td>   
+      </tr>
+    </table>
+  </div>
