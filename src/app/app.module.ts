@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ListeUserService } from './liste-user.service';
 
 
 import { AppComponent } from './app.component';
@@ -13,7 +14,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule
     ],
-  providers: [],
+  providers: [ListeUserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
