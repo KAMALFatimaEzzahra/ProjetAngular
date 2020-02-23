@@ -20,6 +20,8 @@ export class AppComponent {
   Tab : number [] = [1,3,5,7,9,11,13,15];
   b:any=[]
   Liste:any=this.ListeUserService.getListe();
+  Adresse:string="";
+  Company:string="";
 
 
 
